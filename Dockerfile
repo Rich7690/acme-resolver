@@ -9,10 +9,10 @@ RUN mkdir -p /data
 VOLUME [ "/data" ]
 WORKDIR /data
 
-ENV DOMAIN_NAME
-ENV EMAIL
-ENV DNS_RESOLVERS
-ENV DNS_PROVIDER
+ENV DOMAIN_NAME example.com
+ENV EMAIL test@example.com
+ENV DNS_RESOLVERS 1.1.1.1:53
+ENV DNS_PROVIDER njalla
 
 ENTRYPOINT [ "tini", "--" ]
 CMD ["/usr/local/bin/renew.sh"]
