@@ -14,5 +14,4 @@ ENV EMAIL test@example.com
 ENV DNS_RESOLVERS 1.1.1.1:53
 ENV DNS_PROVIDER njalla
 
-ENTRYPOINT [ "tini", "--" ]
-CMD ["/usr/local/bin/renew.sh"]
+ENTRYPOINT [ "/bin/ash" ]
