@@ -13,5 +13,6 @@ ENV DOMAIN_NAME example.com
 ENV EMAIL test@example.com
 ENV DNS_RESOLVERS 1.1.1.1:53
 ENV DNS_PROVIDER njalla
+ENV SECRET_NAME prod-cert
 
 ENTRYPOINT [ "/bin/ash" ]
