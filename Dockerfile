@@ -15,4 +15,4 @@ ENV DNS_RESOLVERS 1.1.1.1:53
 ENV DNS_PROVIDER njalla
 ENV SECRET_NAME prod-cert
 
-ENTRYPOINT [ "/bin/ash" ]
+ENTRYPOINT [ "/usr/local/bin/renew.sh" ]
